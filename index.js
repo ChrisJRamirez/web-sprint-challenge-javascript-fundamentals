@@ -28,10 +28,15 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num1) {
+  let count = num1;
+  for (let i = 0; i < num1; i++){
+    count += i;
   }
+    return count
+  }
+
+  summation();
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -77,8 +82,10 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(item){
+    return zooAnimals.filter(function(item){
+      return item.population < 5;
+    });
   }
   
 
@@ -88,9 +95,13 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(){
+    const belowFive = zooAnimals.reduce(function(accumulator, item) {
+      return accumulator + (item.population)
+    }, 0);
+    return belowFive
   }
+  USApop();
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
