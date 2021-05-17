@@ -61,9 +61,16 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(){
+    const displayNames = ["name", "scientific"];
+    zooAnimals.forEach(function(item){
+      return displayNames.push(item.animal_name, item.scientific_name)
+    });
+    return displayNames
   }
+
+  animalNames();
+  
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -72,8 +79,12 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(){
+
+    const animalLowercase = zooAnimals.map(function(item){
+      return item.animal_name.toLowerCase();
+    });
+    return animalLowercase
   }
   
   
