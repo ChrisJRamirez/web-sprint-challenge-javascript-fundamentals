@@ -34,9 +34,13 @@ Furthermore, with .map you have the ability to chain other methods with it such 
 
 2. Explain the difference between a callback and a higher order function.
 A callback function can also be a higher order function. A higher order function receives a function as an argument, and may return a function as well. A callback function  is a function that is passed to another function, and is expecting to be called by said other function.
+A callback is the function that is passed into a higher order function.
 
 
 3. Can you explain what a closure is and how you used it in the counter function? 
+Closure in the case of a function is the ability to reach outside of its function scope, into the global scope to access a variable.
+In the counter function closure was used when we reached out of the for loop to pull the argument num1.
+
 
 4. Describe the four principles of the 'this' keyword.
     1. Window binding - if a function is contained in global scope, the value of this will be the window object
