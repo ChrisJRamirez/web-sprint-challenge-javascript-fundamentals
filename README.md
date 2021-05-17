@@ -44,7 +44,10 @@ A callback function can also be a higher order function. A higher order function
     3. Explicit binding - when we use call or apply methods, the first agument in these methods sets what this is referring to
     4. New binding - when we use a constructor function, this is referring to the specific object that we are creating / returning with this new constructor function
 
+
 5. Why do we need super() in an extended class?
+We need super() to work with extends in order to tell the child who to inherit from for both the attributes and methods.
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
