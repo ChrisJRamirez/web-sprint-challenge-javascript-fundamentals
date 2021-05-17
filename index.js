@@ -16,8 +16,9 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
-
+//Answer Below
+//nestedFunction can access the variable "internal" because the variable is defined outside of nestedFunction.
+//Therefore, nestedFunction can reach outside of its function-scope to access the variable internal.
 
 
 
@@ -67,8 +68,6 @@ const zooAnimals = [
       return displayNames
     };
 
-  
-  
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
