@@ -28,12 +28,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+.map creates a new array of the specified parameters while .forEach does not change array on which you call it.
+Furthermore, with .map you have the ability to chain other methods with it such as .filter, while you do not have the ability to do this with forEach.
+
 
 2. Explain the difference between a callback and a higher order function.
+A callback function can also be a higher order function. A higher order function receives a function as an argument, and may return a function as well. A callback function  is a function that is passed to another function, and is expecting to be called by said other function.
+
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
 4. Describe the four principles of the 'this' keyword.
+    1. Window binding - if a function is contained in global scope, the value of this will be the window object
+    2. Imlpicit binding - when we use this., whatever object comes before the dot is what this is referring to 
+    3. Explicit binding - when we use call or apply methods, the first agument in these methods sets what this is referring to
+    4. New binding - when we use a constructor function, this is referring to the specific object that we are creating / returning with this new constructor function
 
 5. Why do we need super() in an extended class?
 
